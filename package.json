@@ -1,0 +1,21 @@
+{
+  "name": "monsters-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:codequest-eu/monsters-api.git"
+  },
+  "author": "CodeQuest",
+  "license": "ISC",
+  "homepage": "http://codequest.com",
+  "description": "",
+  "dependencies": {
+    "require": "^2.4.20",
+    "express": "^4.16.3"
+  }
+}
