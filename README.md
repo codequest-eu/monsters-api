@@ -1,4 +1,4 @@
-# Monsters API
+# Monsters REST API
 
 ![Fooz](./static/yellow-150x150.jpg)
 ![Bazz](./static/blue-150x150.jpg)
@@ -6,9 +6,9 @@
 
 Welcome to Monsters API - a short list of silly pranksters that loves to mess with code and programmers. Let's meet all of them face to face! 💪
 
-## Base API URL
+## API
 
-By deafult API works on `localhost:8080/api/v1`. There's no CORS restrictions 👌. Just make sure your node version is `>=8.9.4`.
+By default API works on `localhost:8080/api/v1`. There's no [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) restrictions 👌. Just make sure your `node.js` version is `>=8.9.4`.
 
 ```bash
 $ curl http://localhost:8080/api/v1

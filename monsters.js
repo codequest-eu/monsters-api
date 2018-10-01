@@ -33,7 +33,7 @@ class Monsters {
     this.descriptions = [
       'Loves to eat semicolons 😋.',
       '"Response with an error is a happy response".',
-      'Outdates depnedencies.',
+      'Outdates dependencies.',
       'Somebody touched his (code) spaghett! 🍝.',
       'He knows the way 🛣.',
       'Listens to "Last christmas" in june 🎶.',
