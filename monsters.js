@@ -1,30 +1,30 @@
 const config = require('./config');
 
 class Monsters {
-	constructor(url = `http://localhost:${config.port}${config.staticDir}`) {
+  constructor(url = `http://localhost:${config.port}${config.staticDir}`) {
     this.url = url;
-  	this.monsters = [
-    	{
-      	name: 'Fooz',
+    this.monsters = [
+      {
+        name: 'Fooz',
         imagePrefix: 'yellow'
       },
-    	{
+      {
       	name: 'Bazz',
         imagePrefix: 'blue'
       },
-    	{
+      {
       	name: 'Barry',
         imagePrefix: 'seledin'
       },
-    	{
+      {
       	name: 'Koo',
         imagePrefix: 'violet'
       },
-    	{
+      {
       	name: 'Roar',
         imagePrefix: 'green'
       },
-    	{
+      {
       	name: 'Dee',
         imagePrefix: 'pinky'
       },
@@ -63,7 +63,7 @@ class Monsters {
   }
 
   generateMonstersData() {
-  	return this.monsters.map((monster) => ({
+    return this.monsters.map((monster) => ({
       name: monster.name,
       ...this.createMonsterDetails(monster)
     }));
@@ -81,7 +81,7 @@ class Monsters {
   }
 
   generateStatistics() {
-  	const statistics = {};
+    const statistics = {};
 
     this.properties.forEach((property) => {
     	statistics[property] = Math.random().toFixed(2);
@@ -91,8 +91,8 @@ class Monsters {
   }
 
   generateDescription() {
-  	const copy = [...this.descriptions];
-  	const description = [];
+    const copy = [...this.descriptions];
+    const description = [];
 
     while(description.length !== 3) {
     	const index = Math.floor(Math.random() * copy.length);
