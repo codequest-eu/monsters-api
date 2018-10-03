@@ -55,11 +55,7 @@ class Monsters {
   }
 
   getMonster(slug) {
-    const monster = this.monstersList.find((monster) => monster.name.toLowerCase() === slug);
-
-    if(!monster) return undefined;
-
-    return monster;
+    return this.monstersList.find((monster) => monster.name.toLowerCase() === slug);
   }
 
   generateMonstersData() {
@@ -101,7 +97,6 @@ class Monsters {
 
     return description.join(' ');
   }
-
 }
 
 module.exports = Monsters;
