@@ -32,7 +32,6 @@ Content-Type: application/json; charset=utf-8
 Returns array of monsters with their names and slugs. Slug is used for requesting monster details.
 
 ```bash
-$ curl http://localhost:8080/api/v1/monsters
 {
   "data":[
     {
@@ -60,7 +59,6 @@ $ curl http://localhost:8080/api/v1/monsters
 
 
 ```bash
-$ curl http://localhost:8080/api/v1/monster/fooz
 {
   "data": {
     "name": "Fooz",
