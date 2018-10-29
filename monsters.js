@@ -59,10 +59,11 @@ class Monsters {
   }
 
   generateMonstersData() {
-    return this.monsters.map((monster) => ({
-      name: monster.name,
-      ...this.createMonsterDetails(monster)
-    }));
+    const monstersData = this.monsters.map((monster) => {
+      return Object.assign({ name: monster.name }, this.createMonsterDetails(monster));
+    });
+
+    return monstersData;
   }
 
   createMonsterDetails(monster) {
