@@ -88,14 +88,14 @@ class Monsters {
 
   generateDescription() {
     const copy = [...this.descriptions];
-    const description = [];
 
-    while(description.length !== 3) {
-    	const index = Math.floor(Math.random() * copy.length);
-      description.push(copy.splice(index, 1)[0]);
-    }
-
-    return description.join(' ');
+    return new Array(3)
+            .fill(undefined)
+            .map(() => {
+              const index = Math.floor(Math.random() * copy.length);
+              return copy.splice(index, 1)[0];
+            })
+            .join(' ');
   }
 }
 
