@@ -41,6 +41,10 @@ app.get(`${config.apiPath}/monster/:name`, (request, response) => {
     response.status(404).send(JSON.stringify({error: `"${request.params.name}" monster not found 🙁`}));
 });
 
+app.get(`${config.apiPath}/teapot`, (request, response) => {
+    response.status(418).send({});
+});
+
 app.listen(config.port, () => {
     console.log(`It's alive! http://localhost:${config.port}${config.apiPath} 🚀`);
 });
