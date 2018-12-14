@@ -55,7 +55,7 @@ Returns array of monsters with their names and slugs. Slug is used for requestin
 
 * `GET /monster/:slug`
 
-  If slug is correct and monster exists, will response with generated monster details. Each server instance will create new statistics so don't be surprised with the diffs 😉.
+  If slug is correct and monster exists, will response with generated monster details. Each server instance will create new statistics so don't be surprised with the diffs 😉. Those monsters... they're so unpredictable!
 
 
 ```bash
